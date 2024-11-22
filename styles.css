@@ -1,0 +1,215 @@
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #070707;
+    padding-top: 70px; /* Ajustar para navegación fija */
+}
+
+/* Encabezados */
+h1, h2, h3, .navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+
+/* Barra de Navegación */
+.navbar {
+    background-color: #212529;
+    padding: 1rem;
+}
+
+.navbar-nav .nav-link {
+    color: #ddd;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f9d342;
+}
+
+/* Botones */
+.btn-primary {
+    background-color: #f9d342;
+    border: none;
+    color: #212529;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #ffc107;
+}
+
+/* Header */
+header {
+    background: url('header-bg.jpg') no-repeat center center/cover;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
+    transition: background-color 1s ease; /* Suavizar transición de fondo */
+}
+
+header h1 {
+    font-size: 3rem; /* Tamaño de texto más grande */
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Carrusel */
+.carousel-item {
+    transition: opacity 2s ease-in-out; /* Duración y suavidad */
+}
+
+/* Tarjetas de Testimonios */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para las tarjetas */
+}
+
+.card-img-top {
+    border: 3px solid #f9d342;
+}
+
+.card-title {
+    color: #f9d342;
+    font-weight: bold;
+}
+
+/* Pie de Página */
+footer {
+    background-color: #212529;
+    color: #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Media Queries para mejorar la visualización en móviles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem; /* Ajustar tamaño de texto en dispositivos pequeños */
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 14px; /* Reducir tamaño de texto en la barra de navegación */
+    }
+}
+
+/* Ajustes de botones dentro de los formularios */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+select {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+/* Resaltar elementos de formulario al hacer hover */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+select:focus {
+    outline: none;
+    border-color: #f9d342; /* Resaltar con color amarillo */
+}
+
+/* Estilo para el formulario de reserva */
+.reserva-form {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.reserva-form h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #212529;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para los campos de texto, teléfono y correo */
+.reserva-form input[type="text"],
+.reserva-form input[type="email"],
+.reserva-form input[type="tel"],
+.reserva-form input[type="date"],
+.reserva-form input[type="number"],
+.reserva-form select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.reserva-form input[type="text"]:focus,
+.reserva-form input[type="email"]:focus,
+.reserva-form input[type="tel"]:focus,
+.reserva-form input[type="date"]:focus,
+.reserva-form input[type="number"]:focus,
+.reserva-form select:focus {
+    outline: none;
+    border-color: #f9d342; /* Resaltar al estar enfocado */
+}
+
+/* Estilo para los botones */
+.reserva-form button {
+    background-color: #f9d342;
+    border: none;
+    color: #212529;
+    font-weight: bold;
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.reserva-form button:hover {
+    background-color: #ffc107;
+}
+
+/* Espaciado entre los elementos de formulario */
+.reserva-form .form-group {
+    margin-bottom: 15px;
+}
+
+/* Estilos para los labels */
+.reserva-form label {
+    font-size: 1rem;
+    color: #212529;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Estilo para el campo de número de comensales (select) */
+.reserva-form select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('https://image.shutterstock.com/image-vector/down-arrow-icon-triangle-symbol-260nw-1415783212.jpg') no-repeat right 10px center;
+    background-size: 12px;
+    padding-right: 30px;
+}
+
+/* Estilos para el formulario completo en dispositivos móviles */
+@media (max-width: 768px) {
+    .reserva-form {
+        padding: 20px;
+        width: 90%;
+    }
+}
